@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>AppHub</title>
+    <link rel="stylesheet" href="./../css/apps.css" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+</head>
+
+<body style="background-color: #f0f5f5;">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+    <!-- Nav Bar-->
+    <nav class="navbar navbar-expand-lg ">
+        <div class=" container-fluid ">
+            <img src="logo.jpg" alt="... " height="50x " width="50px "  border-radius="50%" class="ms-3 ">
+            <a class="navbar-brand fs-3 fw-normal " href="# ">AppHub</a>
+
+            <button class="navbar-toggler " type="button " data-bs-toggle="collapse " data-bs-target="#navbarSupportedContent " aria-controls="navbarSupportedContent " aria-expanded="false " aria-label="Toggle navigation ">
+            <span class="navbar-toggler-icon "></span>
+          </button>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent ">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item fw-medium ">
+                        <a class="nav-link " href="index.html ">All</a>
+                    </li>
+                    <li class="nav-item fw-medium ">
+                        <a class="nav-link " href="pages/socialmedia.html">Social-media</a>
+                    </li>
+                    <li class="nav-item fw-medium ">
+                        <a class="nav-link " href="pages/Movies.html ">Movies </a>
+                    </li>
+                    <li class="nav-item fw-medium ">
+                        <a class="nav-link " href="pages/Shopping.html">Shopping</a>
+                    </li>
+                    <li class="nav-item fw-medium ">
+                        <a class="nav-link " href="pages/Food.html ">Food</a>
+                    </li>
+                    <li class="nav-item fw-medium ">
+                        <a class="nav-link " href="pages/Travel.html">Travel</a>
+                    </li>
+                </ul>
+                <form class="d-flex ">
+                    <!-- <input class="form-control mx-5 " placeholder="Search " size="60px ">-->
+                    <input class="form-control me-5 " type="search " placeholder="Search " aria-label="Search ">
+                    <a href="pages/signin.html"> <img src="images/account.png" class="img-fluid me-5"
+                        alt="..." height="33px" width="33px"></a>
+                       
+
+                    
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div id="carouselExampleCaptions" class="carousel slide bg-dark container-fluid">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/sliding.jpg" class="d-block w-100" alt="Spider-Man 2" style="height: 570px;">
+                <div class="carousel-caption d-none d-md-block">
+                    
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/shutterstock_1171378096.jpg" class="d-block w-100" alt="John Wick" style="height: 570px;">
+                <div class="carousel-caption d-none d-md-block">
+                    
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/download.jpeg" class="d-block w-100" alt="Flash" style="height: 570px;">
+                <div class="carousel-caption d-none d-md-block">
+
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+
+    <style>
+        body {
+         font-family: Arial, sans-serif;
+         margin: 0;
+         padding: 0;
+         background-color: #f4f4f4;
+     }
+
+     header {
+         background-color: #333;
+         color: #fff;
+         text-align: center;
+         padding: 1em;
+     }
+
+     section {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: space-around;
+         padding: 20px;
+     }
+
+     .app-card {
+          position: relative;
+         width: 300px;
+         height: 200px;
+         margin: 20px;
+         background-color: #fff;
+         border-radius: 8px;
+         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+         overflow: hidden;
+         transform: translateY(0);
+         transition: transform 0.3s ease-in-out;
+     }
+ .app-card:hover {
+         transform: translateY(-10px);
+     }
+
+     .app-image {
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+     object-fit:contain;
+     }
+  
+     .app-details {
+         position: absolute;
+         bottom: 0;
+         left: 0;
+         right: 0;
+         padding: 15px;
+         background: rgba(255, 255, 255, 0.8);
+         backdrop-filter: blur(5px);
+         border-top: 1px solid #ddd;
+         border-radius: 0 0 8px 8px;
+         opacity: 0;
+         transition: opacity 0.3s ease-in-out;
+      
+     }
+ 
+ 
+     .app-card:hover .app-details {
+         opacity: 1;
+     }
+     .app-title {
+         font-size: 1.2em;
+         font-weight: bold;
+         margin-bottom: 10px;
+     transition: color 0.3s ease-in-out;
+     }
+
+     .app-description {
+         font-size: 0.9em;
+         color: #666;
+         margin-bottom: 15px;
+     }
+
+     .btns{
+         font-size: 1.1em;
+         color: #00c;
+     }
+ .app-card:hover .app-title {
+         color: #ff8c00; /* Change color on hover */
+     }
+
+     /* Cursor Animation */
+     .app-card:hover {
+         cursor: pointer;
+     }
+ </style>
+</head>
+<body>
+
+ <section>
+     <div class="app-card">
+         <img class="app-image" src="https://img.freepik.com/free-vector/instagram-icon_1057-2227.jpg?w=1380&t=st=1702575871~exp=1702576471~hmac=0d97c9d105bfe3628683d034f90092d9fa42f805eb7b68190b31da4ed9b4e138" alt="Instagram">
+         <div class="app-details">
+             <div class="app-title">Instagram</div>
+             <div class="app-description">Instagram is an social media app which brings people together.</div>
+             <div class='btns'></div>
+     <a href="https://www.instagram.com/accounts/login/">
+     <button class="button">Launch</button>
+     </a>
+     </div>
+         </div>
+     </div>
+
+     <div class="app-card">
+         <img class="app-image" src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Facebook_Logo_2023.png"alt="Facebook" alt="Facebook">
+         <div class="app-details">
+             <div class="app-title">Facebook</div>
+             <div class="app-description">Facebook is an social media app which brings people together</div>
+     <div class='btns'></div>
+             <a href="https://www.facebook.com">
+     <button class="button">Launch</button>
+     </a>
+         </div>
+     </div>
+ <br>
+ <div class="app-card">
+         <img class="app-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/1024px-Logo_of_Twitter.svg.png?20220821125553" alt="Twitter">
+         <div class="app-details">
+             <div class="app-title">Twitter</div>
+             <div class="app-description"> From breaking news and entertainment to sports and politics, get the full story with all the live commentary</div>
+             <div class='btns'></div>
+     <a href="https://twitter.com/i/flow/login">
+     <button class="button">Launch</button>
+     </a>
+         </div>
+     </div>
+ <div class="app-card">
+         <img class="app-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/600px-LinkedIn_logo_initials.png" alt="linkedin">
+         <div class="app-details">
+             <div class="app-title">LinkedIn</div>
+             <div class="app-description"> Describe what makes you tick. Passion is the heart of some of the best summaries. ...</div>
+             <div class='btns'></div>
+     <a href="https://in.linkedin.com/?src=go-pa&trk=sem-ga_campid.14650114788_asid.151761418307_crid.657403558721_kw.linkedin%20login_d.c_tid.kwd-12704335873_n.g_mt.e_geo.9299102&mcid=6844056167778418689&cid=&gclid=Cj0KCQiA7OqrBhD9ARIsAK3UXh0YRv_GsaH-uZkuUWLAn6JbQ9eWQ0ehxgHZ8rfPkmPEya5lt2zl6XMaAhonEALw_wcB&gclsrc=aw.ds">
+     <button class="button">Launch</button>
+     </a>
+         </div>
+     </div>
+ <br>
+ <div class="app-card">
+         <img class="app-image" src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/07/d3/6f/07d36f10-d390-91a8-d5f8-403568823f2b/AppleWatch_Splash.png/300x0w.jpg" alt="snapchat">
+         <div class="app-details">
+             <div class="app-title">snapchat</div>
+             <div class="app-description">Chat, send Snaps, explore Stories & Lenses on desktop, or download the app for mobile! Connect & create with friends, wherever you are.</div>
+             <div class='btns'></div>
+     <a href="https://www.snapchat.com/">
+     <button class="button">Launch</button>
+     </a>
+         </div>
+     </div>
+ <div class="app-card">
+         <img class="app-image" src="https://cdn.mos.cms.futurecdn.net/R4DgSdP6erUexko5KuX6UF.jpg" alt="YouTube">
+         <div class="app-details">
+             <div class="app-title">YouTube</div>
+             <div class="app-description"> Share your videos with friends, family, and the world.</div>
+             <div class='btns'></div>
+     <a href="https://www.youtube.com">
+     <button class="button">Launch</button>
+     </a>
+         </div>
+     </div>
+ <div class="app-card">
+         <img class="app-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Wikipedia-logo-v2-en.svg/1200px-Wikipedia-logo-v2-en.svg.png" alt="wikipedia">
+         <div class="app-details">
+             <div class="app-title">wikipedia</div>
+             <div class="app-description"> Wikipedia is a free online encyclopedia, created and edited by volunteers around the world and hosted by the Wikimedia Foundation.</div>
+             <div class='btns'></div>
+     <a href="https://www.wikipedia.org">
+     <button class="button">Launch</button>
+     </a>
+         </div>
+     </div>
+ <div class="app-card">
+         <img class="app-image" src= " https://www.trustedreviews.com/wp-content/uploads/sites/54/2023/07/Threads-app-logo-920x613.png"alt="threads"alt="threads">
+         <div class="app-details">
+             <div class="app-title"> threads</div>
+             <div class="app-description"> Say more with Threads — Instagram's new textapp.</div>
+             <div class='btns'></div>
+     <a href="https://www.threads.net/login">
+     <button class="button">Launch</button>
+     </a>
+         </div>
+     </div>
+ <div class="app-card">
+         <img class="app-image" src="https://static.toiimg.com/photo/101630297.cms" alt="google chat">
+         <div class="app-details">
+             <div class="app-title">google chat</div>
+             <div class="app-description"> Sign in to Google Chat and access powerful group messaging for personal and professional collaboration from Google Workspace.</div>
+             <div class='btns'></div>
+     <a href="https://mail.google.com/chat/u/0/#chat/home">
+     <button class="button">Launch</button>
+     </a>
+         </div>
+     </div>
+ <div class="app-card">
+         <img class="app-image" src="https://play-lh.googleusercontent.com/ZU9cSsyIJZo6Oy7HTHiEPwZg0m2Crep-d5ZrfajqtsH-qgUXSqKpNA2FpPDTn-7qA5Q" alt="telegram">
+         <div class="app-details">
+             <div class="app-title">telegram</div>
+             <div class="app-description"> Telegram is a cloud-based mobile and desktop messaging app with a focus on security and speed.</div>
+             <div class='btns'></div>
+     <a href="https://web.telegram.org/k/">
+     <button class="button">Launch</button>
+     </a>
+         </div>
+     </div>
+ <div class="app-card">     
+ <img class="app-image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAX8AAACDCAMAAABSveuDAAAA/1BMVEX///9ChfTqQzX7vAU0qFMipEjy+fS53sEzfvO+0vv7ugD7uAAufPPD1vv7twA+g/TpMR7qPi9OjPXpOSkqevNHiPTqPC35+//pLRjt8/7pNCLT3/yZz6Z7pvfI2fuRtPixyfpyofZnmvbz9/7r8f6hv/n619XY5PyOsvj98vGGrff2urapxPlZkvXd6P3//vr4xsPwgnv86efsW1D0p6LucWn/+u7rTD/rUUX81Hn5z8zxi4T+8tftY1n1sKv2vLjymZP92o395K38ylPvdW38z2b+68L+89r94qPi8uYFnzv+7cfzoJv80Gn7wSP73938xjz8yUb93Zj814ISc/M1MDLVAAAUZ0lEQVR4nO1de1/ayBoGPHs2QCBAgoRwgCTcFVCxKvWCWq12127ptn7/z3JyIZB37uFi+xOeP86eShgyz8y8815nYjFBNDpm68AaFIrxYmFgV+v9zFD0qzusiKZZjWuypChK3IPzfxRJkuVBPdP41e/27tGpFx3q4yS4o2Cb5V/9hu8YzVZBJnM/HwNJsiq/+jXfEn/9GcZGf6pTlSQm+bMhkAfJjb7Hb4U///5jgb//u7kf6licqR9eBIWtGYE///jPAn9sjP9yVZh9D9JgS/Sht+G/pUVi310DWndD7/J74S34HxZE5D62BIqdjbzN74U34L8VTfQsloDc38Tr/F7YOP8Ne5nJP1sC1vrf5zfDpvkfxpeb/LMBGLx3i3jD/Ncotm7cN3clWZad/527IggPNdf9Sr8XNsu/SdF7XH/P4KBlZiqVSi3Zr1sK3Smx5lf6zbBR/vsahXzbRNX7cqYbl/BloMTfuT9ok/ybMpF9O0kR6p2uguzVSvGd079J/pME+hWpyjJsS/1iWA69f/o3yH+FINHlKm87LbUWX9sC+jfHfxNnXyqIuJYb1dmmvQ30b47/Acq/otUFv5r0lsBW0L8x/g9Qq1eRxOMq5YHkaD7v3fTysCH+M6jmqRQizeaqXNwK+jfEfwndeyW7FK2F+jYIn9im+K9i9K+p4XeHjfBfQTR/ZbCedt8hNsJ/AZn+xYjCZ4uwCf5Rw1d+5z7MVbAJ/ouQfm1rkhmWwAb4R6a/Ul1Ho+8VG+AfsXyV7VDkl8T6+UeUH9lcQ5vvF+vnH+r+O9WTjbXz34COH6m2epPvGWvn35R20z8C1s6/DcSP9Na652jabrenvZXaOL++frm+Pl+lifKw0xmKmD3R+O95vRsxnmiA3fctsxd6x3dn+7qec6Hr45NJO3obRy/3D3vZbNpFNrv3cP9yFLmNpnlQ8NJqZFkrVk3OIAjzPzo8Gc97d3EyoQxCBoqft0qi7U1udEPNJ+bI76s59eQ4ShtHnx7S6VQqtRcglXKG4eFTlCEo9wcgk0aRNDsQAZVMbY5MMCxi/I++jnVjPx/qnaGffiCt8i4QP/Lb1LK0T3QjxP0c+7nEV1FR9PwxlV5Qv4Dz14/Pgm0MqxIe9FakuOl9armpZjPMfQIi/LcfdRXvXt4wrvDOAePrbcRP+0bfJ5DvQ1XvREbg+TOR/GAI/hHZDMoHtERjeeCmcocVc0mc/+kZtXuq8RV5uATiXm/heuid6KSpH3rJ/UNuI/cM9v0RuOe20aenWjprwFyW/7scfXIlEsZ4Cp4egu3X/dUN41hVmey7yJ2xl8DztzSTfRfpb2wh1LDZWfZyfSn+R6cGu2/5HJhdSbD9yhsvIrrSuew72DdYutCXLHvyz5ZA9gujjQ5j8s+4aFnR+b/Msde2C/0u9IUW4F9bhtIoOOPMjsVLTqhtfMwKsO8i+5HaRpKY6AoBklvF+D8Uml25q8U3oPpTXIFaAfRO+bJnPgAfKI185sueuQz6TGnDFKAfQoh/MfrBAFhA/RGIujeTGXEgBWGnrJ1JcAAi0O8MwD/ENkiJrmvg/1iQfqdvczVoEP4R5YDPf1KThKHB8bwRn/3eS5LUoI9R6HcGgCSCatHpF+F/miN2I0/aEfTA0ASRd0Ug4TATpTqsEP7mFUH251XHOHesdINgryT0KfbrXwj0u1Zv1vVBpAjbcvYT1kaT0APvPBFNphWVCPGfwLvgWL2J09OxgVubxswdAUK/UmvN/EuhPIpbfHUa+tnkctSL9abHd2OC0ZJHf/wapz+V/X7/9Hx+dP78dP+doBhlMTUUS3SNK9qgVWs2So1hpl4kq6V8/k+w1e3Yu5e+Ij2d3CBGz/6N/y34I+vmX14kxfUw+o3EJKzmT68ww0V9RH58D+U3lboPW7rn99gaSH1D2qjjia71sM+NfO4Cl/9LtH9qAsjP6RkUTzlfwdvs/A/ZE2cIufsqpmGOHlEJql+CB34i0z+V/on62o4+opZx+gd4YIimmklVNN7dIZSfc/m/QCSMjnoaYrdQ/qre5CtslH9prgCh00O9IZm4t4iczI/Dn54jin9q75rQxgu6SFLAF4QmG0gZQhtVbIfm8T+B5ObzBAOyDSSU6imhUP9Z9/67cKeeQmKNE3LrU0RbMMJr+DMkNvWd7Gg+/4Y8F9aBMkiuTZzs7q+jA8Dj/wLSf0F0oByD9Z1zt2AQ/RJxvy3HP/zlhEqh35FBcADyF4uPnrMI/bQ2jr7DAUiHFgCSaUmtVkZ3CQ7/t6B/+QTFf3USFsLeAgDJDyLB3+X4vwGsBps/CVO4kHOLiMxHwGpqjx5mOYciKOQLRXNt6P4uGJbl8Q/7Z+CKs48PQALlnFGqw+gvnZcAS8l/xDRRWe7NCZxKZ8Hfj+CkzpJkf4CXNByq+QcWjDaZ9CYaCjkuTuR/BN7ZIFvuo695qKIaEzT7QSDxdin95ysc91vmL8C5pAdx00+A0/RPZhtwraSfZn8uw2Ar090CmWHzD+Z1/pTU3OWjjhoIrnCtwF/hJ//w+AezRpuN5zhMaZ4hfVzAxWIEaiqy+7KDvHCxpAI3kBnF2w5VQyb/YMrkLrGmepMLUlRGb8fKMP7CV4Ay8QIb4QGQffsXLk/C+0EAUyEQQEdwS/3BbiL2MzwAcwEEvY2cw3LAYDH574X3LKgzu5heGWS3u6uGKFE3YA76obdW4j7/h+z3Q3EJhkv1/whdDylefPccPD5zQpRAZ3m5BiVh/sELq4j0vz2lhIP39dNbdEeSVq6iCytUwXBeAbULMwwxwA3AVyaA5y31wG0D6KBp3wvXAeKHG+wQjn8B8Z8LKz+juzwx0cNNhjjxHuzDDcDkdoyDsNQMVjgUj/w0KzBehr9b/0Pgk4UfYLz83RpIFL6zPfw4k3+o1i8aOD7LkV3u+7mLwPcF/SErCyCQzRtsJ3Dk+elRQF6pd97f/gX88xN8rgnrpU6MKFIxFOU/PL/m2k/vQ4ISDFb1x9AWCLb5uLRiBB4YOLOX7oXFI0/7cQE0oH3fVoZOBYEUt7C1PHOCAlkrkGsgY10h83+Bv277BFM3Z/038jDFDFpgIiEwFoDdPuviSMffjwngq/YVIKD+0F0PIQAbOOX9Ceaa8ct8Qs5hJv9hpt3l2puQohnep7kbNMWyA03yFXdguJp89aedQ96PC8C/t6DPAZv/CrQBNuAs/nICuQYhHwSTfx30b3Sl0vbc/BXBM4EIoJUycMFuEmy/bZZ6RgQwJz199Tyi+hOLPQD+PYEFelrgNQDklTD/CaKllfDUzQnR7wI1oLi0SvEv3OFM/49M9ZiIDfEPgk3r4x8P7eFQcyc0vQ8pQOKZhSyU4EjOdjg4//nqfywGNuwNyR8B/peRPyTkcwli7vkMB9DVKi9fAgP9K0EPp2D/vWK2EMM6tM79NzzN4vwzFkLjJbz/Eqa+fsb2uCAJGYq0bAEwMv2DaCZUZ5bTP49W0z99BxDw6QvIWVH9/wKlPNRdY/+OVX7kAVkAImlwRMCg0aKD8JX47RwT7C/oT+Cn9z8TNgzQT5nr6y2L6v83tKTbfVzdJAHNSFpSB4KabGgUQfA3RwsOLQD9D34I+HNE/wP0F/khYKBp8JMNaqLz/4qo8eQNlaRukoBGOzVT7HsAJXiMRyixAPpH+AoQ6MbMXwT5pCXWLvBAGC+QeMh3tXRF/W8TwgZAVTeJiCNYZg9GIqYh/QIkZ5DDQ2G0YQDG/yMSUuRtAIj/2Q9WlqMF+8BsYvHfxjI/GeomETU0ITv6AFgStQEY0eI6QMFyCfZrGNFKs2orXPyAqVqzv0IHBCfYVCO4sijxL2T+s9VNItAD4OJR77JAb20A6jVQEPbRrEIEIxAsmosrIFCwrEIUgP25uALVJjw9zyZ6S4n8I8l9kapofUDV0RuAKJ64BprUCrWLOzBBdLY6/Ag6Q4u/swOQ9/DhIP4+hPF3ppoBU1XY/AOHecJg969NXBsdPOVuIOyJ6KCXZiCZXFBAhpOqcMBUrYW5ACU6OwTwDJ9d7BYw/UpmXRg0iJB/0oMCiNm/kZEnro8+NgCKaDSshX8VWdow/ZCe/ua8HpIjs0hAhAkQLAmEGGuhBEQTkZJ0GxhRCTn5V2DLmqV2UuBQoZ+QlgB2AnFckW2BK6U6A+yLMprUiuT+5u5ojfXGiC2z+Oga5h+m6U64ByT/MLRUYIEF3dJES5Q4/CMaELF0x8eZO79U4hIgXHzEOf4/5pbw4+nyBPsNMdFpA9Abw50MpJKhtNIG4AGRPmFjoYVMa8oA1FAqePm3Z3Da6LQt+Gy2vIlLAK8McUfAYhjqNYtQsUOaVbeIipwjiqBpArUkw58iCbh76e8kNwSa/ozsFOhGRdzkTGxO8fhvIz5Q8goIFYCSlkAJPYfVf0VZqRNTZSr1OKlURCmQpCqSgJ5QL3At4Q515CKZiv8gzKZSuB/iC1Z/AUvwUMFC2ORKePo/v/7iEZk5pAl2COJiOv5EibQCvJunZLuVGc55bXQyLZtSrKaQD0Ifodzm9RtoiE3yqBmP5kkfYfVH6W9P4IlP2MkEoeRbHzY2teHlrY0WqV9c/nuoDayqiBF2PEYe2ddxzyj18ju3QlBTCoPBoFCU3NOKKJWCFPpjsQ+YkZ7Xx3ezArXR7QkhR89AZeQTVvqeSu99fDp39cuj8yfSiTTZF6SNMuGeD6Vb88PezSTpRBoR/gn1hapxcjtzwI2Or/JYNgpW3ubigFUcq8TpN6/NnihQjcpH3Evllp8mxqcXhm6Q0lNxCYlWgPlDkN379u1bKks6E4VwDgqh/Ndd4PHCoEC91Uyk/hQvgHTrT42L8elYJfWPkoiJ2wERwLw2YEwpf6d4z4kF8A/k+usUqfZ3j3ICQYu4xhXmxYsi9e835P4RC7DduUeJy2DGrDjYPosejWkickQjBq0tYoMSKMYtHS5E+O9dRDlfgVok4+7/S42Awjs6dxRhAMj0RxuANC1OzBSyS/MfaQCYXuAMeq+d0CsWuBl9vQvRIyDAITkQ/4oeAcGwkLsCA7DE+TO9sWD/8ionMtblnk+Evq0sUDzs2H/kQyrQ12MY8KIHAKWyrBIl/i4ndZc4f0mwf+qYGx9oVqOMgCJbgs7SDwInRBkX7NnxibLbAvpTT8w2KpxdTq4ud/7bB87pdt7sEsnBcQ9n5CibC/Zt8XMrpzecKbJP984FOH/gnb+X/cxLkWDvcnJ92fP3pqec/hkXovGZZl3h78SOYVYV8JKGcHtBzk/12dcfRZIGXr4zz5/8jlpdJFQGVG1fcR24S54/GZskGKesqUIJgAFKGUtirQJF0gb96BnTh5T87Lwqxr6Lp+9ZshhKZf9li54FkgXC/HJssa5nRAL+A4/6n3//scDflPNvyeWOXkqK0OmmYZQyB65ZiA6C4tqMktVfMlu3faXmkDOXHGNxHClu/fxzD7V5XVv4p+jpty4qVRkOgdPX4DgasP8GTuC//hcG9fznyxMd6Z97BPEZu/KZimaybiuLc8W8K+DtLnYndjS0v54ZuZxhGKrh/DeXODnkJuphuP7xkEovsPf5B6ssnohSrV6QpdlRw3Khu/C2hz11SxzMfPn1xu+f4fXv9Op4tVPeS81OLZk0zWSy0mmu6YKw0fT4cDKZ3F5Oo59bHuD8+uXTly9fPr2scAL9sOJ2rDYE3Qo7g5c8GdXp3+1kcnjcjj61dghrqPLuUqK3RrguQiRbfYf1IlytvbuW5e0BTlLY3Um3biR5+X1h9UeKmI25AxvNuiRpbJUGFEW80b0gW4KarUkKr8wnHCVTlN32uy40+sERt8xwETh/bOmKrB0QdKrSYl6zSvBAjPIN7gXZDnReQQUG/Z5vmCSx+rFIO/iA2VfKgDIAQ+CZBiXpzXX5XrYSHVhopRSIIqiDZOmGM2CV150utALgeWtxhXQMU0uDqwTUUhV3uugqKKOZHVjsNIMefw5rqXb8rwYTzXxQ5EE/cDw3avUi9jlUPnf8rwgLr/OR5PjAtmy7KBHikUidsM+/mYx1utZBzc2Xtqqm/1EpeWBZ3SBS6fyj24mZ/mfNlmXVZ2Hycr9qHZhbu4sTqxwUD/jf8UJcj/+SZPdfNVnT+kP51fmPpyBVFE0uSprsrZfSQNPi2qspe1dq9mVnS9E0ry6oImlKUdbiG7/r7ndFM0pqmYQeh+TzH49r/ZLrIlUOGi7x3phI7qSuxb27Um3ZLscaXc0758zUFGelDAeaW/LtqVOlA3l7bWr0DhIGcMe/z3/RP75j4G8OdTf5r//qO6n7sjPNK5qvNFlK0T131/f1Of9txIb+YokVrK2VQIh5xaIfr6Wa8e8zWvV9SKabrhUr+zHKjJsFXp+JrY5cdI3p2VzvOo+XNeWt73j//dAkVrrhwodgHwf8+ylCvm5qav5ZEqVOplVV3DM87ZmWVNKKrivV7rdcWO6JtAeyLFWTW+7RKJEKN9HJL5OiXgH/3j+qWoj/jq29vmoFW3L4LwQJEy7/dUnRPMia22LfvW5eqLT6PcPkDQDRNGbw39Eky6yUffkD579cb5R9+CJqaFqSJHDZxbtGmZmA60x+soig8m/PTtQy3WXT1ULyPynPlKiGS78/Bg1bLGH/PaNjaZTcVkmm1v1T+Q+O87Cl6kL/qbr6T1OaXQQ40EznWT/w3Nrx7wiCroTWm3q1kC26bGDMf28Trmueu9rR/5tz/f9ALrgDUJcl91Q/z53aKGhbvgHMUKkPwKW5itVnWqZxz9aKv3r/sEL8VzR5UD+QtL7s2QyO/au9ai3JO2faljW7Gpe9E2lNTRtUbU0TuOxuS1Aa1kxPPzQzHa5eWLWGbvGGL9FbljeJa5YZc8WZohTqDecJb/VkutV6syn7cihp+5+5qFSLSpx1qsYOK2Om6DhK0fa6GX4lkq/+Ltvd7bK/BA1NMhulckte+jDnHVZCRtJkSdPiOyXnF6GUbNVbvE32/+adGGaEarLLAAAAAElFTkSuQmCC" alt="google">
+         <div class="app-details">
+             <div class="app-title">google</div>
+             <div class="app-description"> Search the world's information, including webpages, images, videos and more. Google has many special features to help you find exactly what you're looking </div>
+             <div class='btns'></div>
+     <a href="https://www.google.com">
+     <button class="button">Launch</button>
+     </a>
+         </div>
+     </div>
+ <div class="app-card">
+ <img class="app-image" src=" data:image/png;base64,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" alt="google maps">
+         <div class="app-details">
+             <div class="app-title">google maps</div>
+             <div class="app-description"> Find local businesses, view maps and get driving directions in Google Maps.</div>
+             <div class='btns'></div>
+     <a href="https://www.google.com/maps/@12.959744,77.6011776,12z?entry=ttu">
+     <button class="button">Launch</button>
+     </a>
+         </div>
+     </div> 
+     <div class="app-card">
+     <img class="app-image" src="data:image/jpeg;base64,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" alt="whatsapp">
+         <div class="app-details">
+             <div class="app-title">WhatsApp</div>
+             <div class="app-description"> Use WhatsApp Messenger to stay in touch with friends and family. WhatsApp is free and offers simple, secure, reliable messaging and calling, available on ...</div>
+             <div class= 'btns'></div>
+     <a href="https://web.whatsapp.com">
+     <button class="button">Launch</button>
+     </a>
+         </div>
+     </div>
+ <div class="app-card">
+     <img class="app-image" src=" data:image/png;base64,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" alt="spotify">
+         <div class="app-details">
+             <div class="app-title">Spotify</div>
+             <div class="app-description">Spotify is a digital music service that gives you access to millions of songs.</div>
+             <div class='btns'></div>
+     <a href="https://open.spotify.com">
+     <button class="button">Launch</button>
+     </a>
+         </div>
+     </div>
+ <div class="app-card">
+         <img class="app-image" src="https://storage.googleapis.com/gweb-uniblog-publish-prod/original_images/Google_Docs.png" alt="Google Docs">
+         <div class="app-details">
+             <div class="app-title">Google Docs</div>
+             <div class="app-description">Description for App 2.</div>
+             <div class="app-price">$1.99</div>
+             <a href="https://docs.google.com/">
+                <button class="button">Launch</button>
+                </a>
+                
+         </div>
+     </div>  
+ <div class="app-card">
+         <img class="app-image" src="https://yt3.googleusercontent.com/CvgBA1ypUZNxOjiCX0l1V2FbAm7oSDPZE4YkMvkpT_4iLXQ3IXWVtBgWnznHxgtcUoj50TXqZA=s900-c-k-c0x00ffffff-no-rj" alt="Netflix">
+         <div class="app-details">
+             <div class="app-title">Netflix</div>
+             <div class="app-description">Description for App 2.</div>
+             <div class="app-price">$1.99</div>
+             <a href="https://www.netflix.com/">
+                <button class="button">Launch</button>
+                </a>
+         </div>
+     </div>  
+ <div class="app-card">
+         <img class="app-image" src="https://1000logos.net/wp-content/uploads/2016/10/Amazon-Logo-2000.png" alt="Amazon">
+         <div class="app-details">
+             <div class="app-title">Amazon</div>
+             <div class="app-description">Description for App 2.</div>
+             <div class="app-price">$1.99</div>
+             <a href="https://www.amazon.com/">
+                <button class="button">Launch</button>
+                </a>
+         </div>
+     </div>  
+ <div class="app-card">
+         <img class="app-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlJIOGtHi6yLhWs9gI0Bz1T83KoUzuqCQ7IQ&s" alt="App 2">
+         <div class="app-details">
+             <div class="app-title">Uber</div>
+             <div class="app-description">Description for App 2.</div>
+             <div class="app-price">$1.99</div>
+             <a href="https://www.uber.com/">
+                <button class="button">Launch</button>
+                </a>
+         </div>
+     </div>  
+ <div class="app-card">
+         <img class="app-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXe2TyrlBaPIjRW3xA4hmZJwumx3yfajDnmQ&s" alt="FlipCart">
+         <div class="app-details">
+             <div class="app-title">Flipcart</div>
+             <div class="app-description">Description for App 2.</div>
+             <div class="app-price">$1.99</div>
+             <a href="https://www.flipkart.com/">
+                <button class="button">Launch</button>
+                </a>
+         </div>
+     </div>  
+ <div class="app-card">
+         <img class="app-image" src="https://play-lh.googleusercontent.com/Zqv3j3gWCWrxuHW1VkRKNWso3beRsrwPCj58kG_Ile6iGGSf1YfkPYhKExXKY7_L0lU=s256-rw" alt="Zomato">
+         <div class="app-details">
+             <div class="app-title">Zomato</div>
+             <div class="app-description">Description for App 2.</div>
+             <div class="app-price">$1.99</div>
+             <a href="https://www.zomato.com/">
+                <button class="button">Launch</button>
+                </a>
+         </div>
+     </div>  
+ </section>
+</body>
+</html>

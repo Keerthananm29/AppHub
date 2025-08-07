@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AppHub</title>
+  <!-- <link rel="stylesheet" href="style.css" /> -->
+   <style>
+    /* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f7f8fa;
+  color: #333;
+}
+
+/* Header */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #1e1e2f;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.nav-links ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #e0e0e0;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #1a1c1b;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #ffffff;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* App Grid */
+.app-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  padding: 40px;
+}
+
+/* App Card */
+.app-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.app-card img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.app-card h3 {
+  margin-bottom: 10px;
+}
+
+.app-card p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.app-card button {
+  padding: 10px 20px;
+  background-color: #686b6a;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.app-card button:hover {
+  background-color: #00a381;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #1e1e2f;
+  color: white;
+  margin-top: 30px;
+}
+
+   </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="main-header">
+    <div class="logo">Movies</div>
+    
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Discover & Launch Top Movies Apps</h1>
+    <p>Your one-stop hub for instant access to your favorite platforms.</p>
+  </section>
+
+  <!-- App Store Section -->
+  <main id="apps">
+    <div class="app-grid">
+    <div class="app-card">
+        <img src="https://yt3.googleusercontent.com/CvgBA1ypUZNxOjiCX0l1V2FbAm7oSDPZE4YkMvkpT_4iLXQ3IXWVtBgWnznHxgtcUoj50TXqZA=s900-c-k-c0x00ffffff-no-rj" target="_blank">
+        <h3>Netflix</h3>
+        <p>Watch your favorite movies and series</p>
+        <a href="https://www.netflix.com/" target="_blank">
+          <button>LAUNCH</button>
+        </a>
+      </div>
+      <div class="app-card">
+        <img src="data:image/webp;base64,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" alt="Flipkart">
+        <h3>Prime Video</h3>
+        <p>Focused on immersive cinematic experience.</p>
+        <a href="https://www.primevideo.com/collection/IncludedwithPrime" target="_blank">
+          <button>LAUNCH</button>
+        </a>
+      </div>
+
+      <!-- Another App -->
+      <div class="app-card">
+        <img src="data:image/webp;base64,UklGRmAPAABXRUJQVlA4IFQPAABQUACdASqNAeYAPp1OoU0lpCMxIpao2iATiWdu3lCw4Fn/+n9q2ifIzFrqs74z7Hpl3ELi1/ZevP+8+HflE9cSeG+vUv7P/0nro/ne+X5KagX5D/Kf83vaIAPzn+s+hJMpyAP1V4m/zb2APz36LWgv619hX9g+uQIXr3kOmCPidZs7yHS9Cn3r4/lyx2YICScVfPIKhv3Iob/LqJb23W7Yz9AWnxFwevmdOLCN3lwb38fYJMPqOjPoQ4hJx0XQn5JY91deiYDFhLnl6GgN12Ui315cEjqPCSuv5hKprdSMsmHP5xvp5DwMa47+yU2i4V1GyQpCnVBJu09m6V1j1oPU3K2I30zIBm0go23ODCJ1TmM/CXvAL4RLbDT8MoKM99zXXz5XKyBq6/qPMhzi2HNgeqd1oJQ9UeyMcSD/Pl8pivXIujjdrkfY2WsSA4AIT1LofQaDs8V2p9k0oqSj930siZtycC9wuMYtGr+U02hNHa3+Wek2MBX113taNwGfcKFZ7CIY5kXcnZnEmHWcVOSSNE0ycYjIpZVmPI5gj9fSnDR51HJwCXQHMxidIvQnYsvDc0uBxR1t0Pp0BYfnieb7Sj4Qdax6UUSsQ6SGYtTIHDC5GK90qWqlUMN/5PJ5MAnCexjW+4ZxKNtHLzqulc6udKMuG/ju/CMtnUDfSIbUFZsd3ZkE1tbdA2hjJvVdAfAB+gmy8WDWTVePEj0peEFeS6Lm0rSyVsSdLyIVOqvUUafAgiuCIpbMcS/XhGjb0nAk6XI7JXVoT9dTQ0jJzUKJV7HBPmn9BibGg0bDKbsA6u9qLw6LcVZEtD9vqcgn+TvHA4zNYo+0OiESSoTUoUKuedP4bJbNUPm1XAAA/vd+3xIX2fg/uLS+b60AAfu/6uHW/2j92hvgAD+AMp/2CvwoDeO8ch85EVord6mU7JJ3+t8ey2Dcq5vO/F5lAqKZZKkTexYABCzKz6OnkzmLUK86CpBDrQriIeGfQBXyIZEbOck0HHQVPHKzQqV6q7dVylVDp/Kb8hhBMWxuIqMt6BwndsnyBc0bdLFmORF91VSKEbBKrtyr7JTGtBfInCw+hPsyeibkCKO8pw6DY5nD+2sK+GkrOwAFfAAg59PBrdjDHYM8WONcnwt5CWQ/EBRGEZy/JSRrnmftfyTnhgTWP19kjbu4KJfvtjGfKnTP9bzM4RfGMYVeO+N/6FYi59imPf8SXF6Xhkd+eZzmwqLdc2jyk9Iq0AgE1BK0G6bFoZ6cIW1u/MDBfHc1wvuuKHgI6A9/5HpjKUWVLphT0qFRo0tHP7l1Fz9MXpWA7xEUxEjauBq3lankY1V157JGiO9iY84PSl6wMaUbdHhM4MAjOMaFCumzxchxiFsSJlWRxjaHykLyYc7B3Cp5OFyCzX/z+FScpNWArGjd9LUYiWv+xn968VV75AymdEdLr+5gtnRZfHU9llf+HQeLlVcvzeNgtZpn/impbUZ5Pyqc+ioFv1zzPTBD4cH7viuyWltlKj1SqeJmifY1MWVCghJuqPOx0j4CZdp+zv5HTmrXPoC+kp2TFqKu+z8oIC5LVS7Mpz3qvsb3UfbXWaEf2gJjHZeOddG0eUvyAJ/yg9wNKWlCXjP5aVvTetbHhRuRmyLHKOaYksG5iyxpKgEq9Uv/FlChBzZ+/WbMDfA8lafyBMokOwp63ipBlEwmLV49t3k++tVtebkVmBmtJ5r+xCx65GXkRIMIAFlNyXrlo875ZoVU98FROPG0ORGzvy4p8asVD2h2dYkI6a8vmEUexUXqldAu2dkcLI7n6oEwvoxIerddZOd+6FWGYGjFvVrJ19fVgTNKeoY20B8yEzpxuPwqjfcnzNQrJUcqebr2FATZY2leoLQRHpR7lvQUiH+nNL38uiIIjnvnJc/MCLo/f/gFwGwfQVouJLq/pWVxwqVFv+fQqKtAP9gXJXqDvs1Q0wWZ9qznoVGSEm6F2w3z5IAwqp4ugnj/BrqLzpsT++oKyOOofaFYbpfcOnpp7WgpKURMBQMdkyGX5vAVKt4wJLoE9kvhtmIl7FaVq0KJm8BqjJSVykbCx++Xw+PNEqewIZHpycO8Gv2CRzunHFitN30N4K6i8FqtlcXDdaxROfgYA/ZU7+v9wEN4GTm5sYLE8xa8RpCiK1p8Owjzb3RrZm5sReGeuMlJcLPhDV0pNL6IRPn09A1Y75MrHO48bHlzGzDQ5t89te6MD4pohJ/7PR97YFQogWIMdUGNH77avU08tTfuGtH0WO1jSrkuLxB8az0Bptf2xzZoNuZANddVtiYSNggrTSMSZHfhsiGz4c2Nm6kNPISRdE8rHKgIV7rhjVTIjmuEWNm153mOMwkI+y/lUzUo0Dr9vbI0cp/yL5FeCps2fY4v1CLVn7tYdfzEGKZvVOS+ppfivDi8/6jn58ke4blnp6NOeOsZB4l5aSROue4qU1nsazZT9m8cIup7BFiDKrgwpIL3LA2lJ7CBTK/sdpHcZtncqKR23soN6T7SLbK2pl2AfdckWWbVOCozaE5XCGYdewUg8TXwr4zf3HrRwhUIv7+m7HtfUGXHGCmecpM6tPqUwSDqhvUIveiiGr5YMXfnfjfAdDnIzjARFQBfx8GJH01m4wQS5Wk6BvwR+b/tNQ4ZRrbnxP4ijPcsCSFLZwjyqgoShtzv6MFURmX7u3PfSMcOInMiwAPy/FZrFpmODBtC7THPK9XA1CHsrt3uorBLFAN+LZKP4wYHF2AJqFkTEpXifv3Ca6xtKzhrEx8IpqUvt7LC0GZfni2dAvE19pbvGluVnG1wce57jYWG8zg1gFjI9h9lxm9El+bjJMuZr7QqYwWF+PA1qaC5usiZL2F634AeAISrQd8uDc6jWgKZmshgfOj0a8ux1etm0FPHU++J6XNt9YWV8g3yVjvUSLMI32lVKxrAkpW2PUihnNKkbH/wQydAMG69Et5ZZliadbbeo+Sd8TGkau25E2wUG/OIcuxwxbnKYQzMTJajeAsvXtosBgt30P5JDWtfuDMiEbRyKzDSFTaQG/RpMXvSxkukILlA1Hzl9Md80nXqLy5TI6qmyZNtCZnA52Cfakai1lbM9XmkkBdcEH0I71ipPHvXX63vNl8t1PeJdn/1F9EtiJI8LYu//SZ2/IUD0fhvejb8rzzrRe/z0Weyx2PjHN+0nCQm61UlMB73qA1lppQ+WKAuABIyzY9MoWKLsZu7M13bje2J1eN+C5C5qsTnMWexFDweQ3N6LIids2ncNdghBnR6eHg8WT8CQEKr/1xaVbmfhA5RUWwptFShBmyaFZ9o/YNH+Pbe1WLDaugGWxAy4pOWHPkM0uG1/WxzypqG3XjqxhcqzaTtY+QjbT+cRN+3H5bGjFtLDowsGn+SYRZQQXY4tXM1MnNF88y91wPCmyiodd2rdB5JrdGospp0hbcAEAtw25kKJjunjAZJxk6iYDd0qOz0bSVJHXhpAOjKad2z03nGsoO97IDgR1fS2qzH8zg5gkSAxE6jOjmFFKAylXUsSlK0Eg2CFYEevZNlw3S7Y4jkmRUk6qgu6FPy44gZqr+tbAWygBjYdm4xZV39pXJaGS+rxcWrWB5ZCwa0S8/ZpwwKlEFVZ6BuV42dnrEQcL8S2e6LHCl31XE5sd1t15POH+cIrW1TEMDhAQVwzWdU0cq1YVyF8xmSWHspupl8daBGkDCPr/VYvM0D7liTuGEjDDkbwiAW3RS+1HFL44wY15HqEAAQzcTccUmoz/5zEQoo694Y8S7w/ogmz3RDLe7dUk1XEu3a7njndF6GnYZ2s0lkKQf+gcrUK974+kz3vj+aja3ODKzfWCgAaJDWeGfpTDCBYc/X5WnprXwPaJPiGh8qhvPlTGWTirM1gitqqNlaZycvHcg6jdMb0YebIf6LgUgTHXvfRfLVsJkNs/X5ABrRBZ/kz7nFCmzdOawNCHk20CEMgpsW6T8No6aSOovqX7xSODTCg2a67EdwsclxQ8jKtYN0qC0mH+lDrSCyXzrQQJJ8B2D72DEg8E8QKowbR8IWnLdmZRx/nLGXKAf23pPaNn/o5CKMQOeAN1SiPHzi0FhzDoMTUr00Mxu9W/yQ3wDRYHT1smHcmg69SFcsTRRoa6jbHA2XPEisp1++p5EbrMe62yDRACdMJv1P7lhV2koNL+f36JFlf+aqezcnyYfTUm/Rx1uckJJorp6B1IFNqAmIU7wXq9HdpQm2EJtZ7aS49vrvUu5Xr6PgtvRe7tC2ssFZIErN1su79byWBQ0muIBykCOAEBym8e8XDKsQXgLZnqSQfyfI9t2IhviXL51/gkHUCwBK6y/ys0vLcV2OEDdQPANPbA2FTiet9tVs1hY+CqrhpXi0RcnYXQ9Pt/2wMsABiHop78tpJ6Dd3gmZ8199AdkudbWtSdVqThmrvjPWqlKNBxavPvh7NAATT4R+CyK7DocFIz0CRvbYwzC3AQiyi0aHJWdzVP4a/yJsbEruRyjN/DKO7TizGhOm2G9THewYVOXMkIEfm0fnT9l8V/Bz0ylyFgmRKR3Qd39hNXxjuxljAmd6HB35aKOZSVgwTcxeZB0lJlJmmIJRxZYafavjsb79plRfz0GbW72UTgBKxTbw8HUfxGyOoXqcrp7J3vmZSlUjWZm2QGDo5kZeUgj7TqsNMcIqirCE8+Gn9ubpINGVdLIwvOQFB+oTMUewWEH+QhyGmSbZXyYqW7OyAlSf5pJeHDYyM/OPT+LLRs2rgk6fU76iUA3vtC2TlC5nGNlQ8BhuY9rgMyH53CCGqqB6RnGACJaTWjo4OVXARbfmNSqvs4AhL3JhEUHGxDD1h7a2KETZgLHx/cO3hS+Ioh4yTN1tRKpTNZP5pdR7JWCvLuTy2bOAcqLZav4Z1B1WPLf2XUsRBCMZqD0dTM81u6Ape+aSZHJMVL4/1ALivw9I5CwnDQMWYdXx8mF9yH0CtcwbWS5op+4GUZDAxQNVy4vW8efiOXiGlcc7RM6CslfX73bCGrm3L+asQxzwlfe1gyytb5YcHTvqUNHnbGidl/QvoDmPtqlPghlo9cwe5A9cJJNFmsOClhc5YX0JsD3g6+gtx6LyWMFYcKVpr9AiE3g0cYCNbEZk5lxn+5niEa/bmfTAn1Cxpp8tI5gy6Eg98Hckp94N7+nlKu7T3JVW4Gmmqo2hvGvstEFFG39kIROvqmwaZzyfVxtxoFEYRT3OUAVftaz6aGW02SO8pjy2AAA=" alt="Amazon">
+        <h3>Disnep+ Hotstar</h3>
+        <p>Empowering Dreams,Enriching Lives</p>
+        <a href=" http://www.hotstar.com/" target="_blank">
+          <button>LAUNCH</button>
+        </a>
+      </div>
+
+      <!-- Add more app cards here -->
+     
+
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 APP HUB. Made with ❤️ for Hackathons.</p>
+  </footer>
+
+</body>
+</html>

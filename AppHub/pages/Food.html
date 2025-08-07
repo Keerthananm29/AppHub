@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AppHub</title>
+  <!-- <link rel="stylesheet" href="style.css" /> -->
+   <style>
+    /* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f7f8fa;
+  color: #333;
+}
+
+/* Header */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #1e1e2f;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.nav-links ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #e0e0e0;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #1a1c1b;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #ffffff;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* App Grid */
+.app-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  padding: 40px;
+}
+
+/* App Card */
+.app-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.app-card img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.app-card h3 {
+  margin-bottom: 10px;
+}
+
+.app-card p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.app-card button {
+  padding: 10px 20px;
+  background-color: #686b6a;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.app-card button:hover {
+  background-color: #00a381;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #1e1e2f;
+  color: white;
+  margin-top: 30px;
+}
+
+   </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="main-header">
+    <div class="logo">Food</div>
+    
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Discover & Launch Top Food Apps</h1>
+    <p>Your one-stop hub for instant access to your favorite platforms.</p>
+  </section>
+
+  <!-- App Store Section -->
+  <main id="apps">
+    <div class="app-grid">
+
+      
+      <div class="app-card">
+        <img src=" https://play-lh.googleusercontent.com/Zqv3j3gWCWrxuHW1VkRKNWso3beRsrwPCj58kG_Ile6iGGSf1YfkPYhKExXKY7_L0lU=s256-rw" alt="Flipkart">
+        <h3>Zomato</h3>
+        <p>Delicious food, delivered fresh</p>
+        <a href="https://www.zomato.com/" target="_blank">
+          <button>LAUNCH</button>
+        </a>
+      </div>
+
+      <!-- Another App -->
+      <div class="app-card">
+        <img src="data:image/webp;base64,UklGRnoIAABXRUJQVlA4IG4IAADwLgCdASrNAOoAPp1KoUylpCMiJFRZOLATiU3bq+tzU/Japx4D7Vfe4r/9o8gHZrzB+onq4+Ofq/5t9ufoF/TX6U/AB+unSA8wHnGf3X1LftJ7AH8p6hj0L/Lj9mf+w5KT5t7MsevPyUD9ispsHoyF1Vjc8+QGVCmAAkhTAASQpgAJIUvViOerY86OuM9hhX1s55Ut1GuqR5IfEj+e7uHRmOCTL62O8UVCie0ekhVHBJCVOLTg5k7du7F6U5kvy46AEzvK4JzwMLLrY3DGDf4AR/+LVSimX/x2PK4zcyPZJnVFvRadlVYonwUdh80YF8IRy+E5V0CSFL/UMahS2yq5NbAS+tEZsIbT0MFPNsHS1t4Wj0FKTXszgYHwl7W0zhsCAyj8hwci+MdAl3BVskSmXtGPtOmHOziUEiobwiCa02ETHlTFC1TQ/M0BiU0lMNwFfwFt/LW/fgNh8wdAVLNRagiXIFT65AUbeLVSqncP5hvALd70U1gQhyZ9s8mnjjwA/ufof8+k/yH+b6h/8yZ90Hq5XoAAAAANfVLLO0VraKa3meH5bK5kBliIS1DQvTeVKG7m8rh5kCmDptOGcz6ebv5R9RBkcEaPkOqRBKJTuslNUlKilptEo5BYmiynLEECpYyL90PL2VfjnEgIpiwLCTUv1N32gd/zWDIGHyRVdRnDncf4p2IlW7g/ZytqPgA2hkGZjZ7+zn03/xx9S6AbblLmx2LyaaNRMwBX0PXK1NwTwDuDZ3NTfnShBGdTONpPdCxdO9A7tk7+cyTfKS6tX2Vqhn2z21DWWjQRswDX5JuZ593Z0WLXk3MzHEFr/4/tlZSp29liQgHBTlQWjNra+hTNh/7N+xpz8XMZ1u0oH/V4q/P1RgBUYcEPvTEp9foCzKTZK5UxmrQuPOOipEhsQJT6F2nts/2PEc1a+pBi4KZMixEVP0HmpSa++Coe2norZxgWOF3kWgBlDN2uNRITvaraW10Gu+KG/wU7xiv8ENgkNuFDiHaaj+t3Ax8B/WifiBXWvejOfWJLYecu557x1DAJ8uI+K2yummHLU9zJqC3NbUc74VDowkck7samYn9eW0DwJolBEP+NAoM+T7APh4L2Ul6hbYKhqqer2qiU136PUrlgRDjsmWMAsORPJftMW8/B1cfuhzQ9r5K/b1TgU+9cGZt75kUAQEyN/ALZxvyT8eyml6ptfop/GrrwvKs9hHMS8vyR3OIk73zUGEdB8poixuQp2V8Ho/1UU96eDb3oAnoSLlqdZrJq9/BrekgrfVlcfn87Hf0U/YMW2dQ/wRiuXXsUmvIkwOt5ifs+0tIOqjchEEhBbpQtWyy2AKlYCUI9CKo1b4NhFGU3DMZk4NdoNZYIo/gAcwuFMSiHYuZFxk1xAZZBUrhOh0zscGnIfx73SFgknKEnTSNYQsRyrK5ueaCf0MKkwpJQrzMh3QRx6NmjTA/mXdeLCOCD9raBNhJTjmZ44nmnoQbg7c/eOfOfEu17BG5vEQYv0wvItaCAjRAZNslfevACajUDJvI5SMUa4rcXi1uPhobeiA+OOZhDa8l8+45ZT7oX2dWoAfFSPILz2N8krcvzhkQMx2GI1PbgEL3OnHtbkxu391Ooi2JUzLcO6uc06BIHw8FG83AA2f/+i7aZMeT1teawdbeAkuOzmNF47wTPYXjNrys/T4ZQGD3nlwL5Rzbp0CUczSzWXqlMeRvBoPCLX6Xo5V/IbyM6o9tsoSQfpi0lRHbSjBMT55I9MoqFTz9dtRGOUytCsdizYoTozpnxjVY93t79P4icYSWV6tsl5XM85OeXEuiMXYDe5lx+JgMT4oqMDD1i6l6NVfzuYkt0tFxlHnNSq7qESO38DZbK5O6XIjPKg1eJffdJp+0iwRXxLk9b6oN3GnorlI+xTPYrjaK3jmo1d27gIaNqXN/6/GAKnK1DB5uiZb1zU/tZYHIqyDAmAtwjQkApqz9Ux4JuIJA68f6mkgSCWEh0m5vM2gKtvCdoSikYIMR9X4oTxgZ3jeWIEyqE4NR8bQljNQy6wsYXl8ky5+sLebKxK/gaBoaT7ZcgSm8Yxi2iIgevvYpkX0AKAXDRR/gbBnbgCGoYDq529Iw01RDhqpoQpHTu9wmu+4HoKGMy18aEK1wirnuaAtUA7XMqS5D6TvWpHbkTKoD4w7SMC7UGBIkUObdKnpqaMh37fO481nK02oIdnpulkEaN8CreMqvrarg+ciSKDsGte6pNpg1e52r/x0Id49CMEGWyp+/HQGtdl8q9VquZwYdHsfudahMksAPOc0K8OwZTX9c6kMwIhvdNakPb23lYlPSvLBgWTYp8Eu/BelMtK+uwccAAmE/k7fB1qD29wG5jgTvTQEvanlMXWGmgRX6XIqZi3XcM4AG+nxuQFnWVWA8b4z0v4pv0PEJYWD9eJf5MIaEUtIPKCuvxbqup/DLx09mkLMjSaZGvyupcZyyQwT34z+35ude2jrLHypxjHvXEVGTOYuqc53DSwHDyYNwmFw9oTl7sCMBlGq56O/jEYRpzpIY8hnrV1ypCOMzPCac1kYM0257IQHd1/zHK5ZrOioKHYFnywZ+YMRjf2EuphH06ebhfkrX3XVUa0j9wofrMi4DJ+Rq5MCxgo+gJ2lOypRphF4tfIZ2xLHyuf5fok3XQLkv1Uogzha2Uv2EUHdLPypjlC2xQ5FBO+eibSr5gQhAe7OeNfzWIA6rJ2PuXPXjMonDsBcmW4IA1RTbEZcoVc8NfxN/M5Jdr//FUg9Y6FKwwmgf1XrYwyT3z3C9tWINjT77m8kaNRN9ovb5qYTjRYW8VyIQEhhqLTqLAJqqgyOG7Dvdq33TDu8xAbHQcbrlKfW2gkH8BLXFeznzEgAAA" alt="Swiggy">
+        <h3>Swiggy</h3>
+        <p>Your favorite foods, delivered fast.</p>
+        <a href="https://www.swiggy.com/" target="_blank">
+          <button>LAUNCH</button>
+        </a>
+      </div>
+       <!-- Another App -->
+      <div class="app-card">
+        <img src="https://th.bing.com/th/id/OIP.S8e2JYJLcEABisX6CE_r8QHaHc?w=196&h=198&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Swiggy">
+        <h3>Domino's</h3>
+        <p>The fastest food delivery around!</p>
+        <a href="https://www.dominos.co.in/" target="_blank">
+          <button>LAUNCH</button>
+        </a>
+      </div>
+
+      
+
+
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 APP HUB. Made with ❤️ for Hackathons.</p>
+  </footer>
+
+</body>
+</html>

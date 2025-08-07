@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AppHub</title>
+  <!-- <link rel="stylesheet" href="style.css" /> -->
+   <style>
+    /* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f7f8fa;
+  color: #333;
+}
+
+/* Header */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #1e1e2f;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.nav-links ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #e0e0e0;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #1a1c1b;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #ffffff;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* App Grid */
+.app-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  padding: 40px;
+}
+
+/* App Card */
+.app-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.app-card img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.app-card h3 {
+  margin-bottom: 10px;
+}
+
+.app-card p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.app-card button {
+  padding: 10px 20px;
+  background-color: #686b6a;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.app-card button:hover {
+  background-color: #00a381;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #1e1e2f;
+  color: white;
+  margin-top: 30px;
+}
+
+   </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="main-header">
+    <div class="logo">Travel</div>
+    
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Discover & Launch Top Traveling Apps</h1>
+    <p>Your one-stop hub for instant access to your favorite platforms.</p>
+  </section>
+
+  <!-- App Store Section -->
+  <main id="apps">
+    <div class="app-grid">
+
+
+
+<div class="app-card">
+        <img src="  https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlJIOGtHi6yLhWs9gI0Bz1T83KoUzuqCQ7IQ&s" alt="Uber">
+        <h3>Uber</h3>
+        <p>Where your wishes come true</p>
+        <a href="https://www.uber.com/" target="_blank">
+          <button>LAUNCH</button>
+        </a>
+      </div>
+      <div class="app-card">
+        <img src=" data:image/webp;base64,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  " alt="Flipkart">
+        <h3>Makemytrip</h3>
+        <p>Where your wishes come true</p>
+        <a href="https://www.makemytrip.com/?msockid=0b16930e8bea62b5160f87848a1d63ae" target="_blank">
+          <button>LAUNCH</button>
+        </a>
+      </div>
+
+      <!-- Another App -->
+      <div class="app-card">
+        <img src="https://th.bing.com/th/id/OIP.hc2-sfvEmicGjoTeoVZpBgHaHa?w=183&h=181&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Redbus">
+        <h3>Redbus</h3>
+        <p>Empowering Dreams,Enriching Lives</p>
+        <a href=" https://www.redbus.in/" target="_blank">
+          <button>LAUNCH</button>
+        </a>
+      </div>
+
+     
+
+
+
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 APP HUB. Made with ❤️ for Hackathons.</p>
+  </footer>
+
+</body>
+</html>
